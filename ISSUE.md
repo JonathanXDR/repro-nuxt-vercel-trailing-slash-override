@@ -2,7 +2,9 @@
 
 ## Environment
 
-- Nitro `2.13.4` (via Nuxt `4.4.8`), Node `24.18.0`, preset `vercel`
+- Nitro: `2.13.4` (via Nuxt `4.4.8`)
+- Node: `24.18.0`
+- Preset: `vercel`
 
 ## Reproduction
 
