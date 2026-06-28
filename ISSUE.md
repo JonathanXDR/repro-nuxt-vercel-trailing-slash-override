@@ -1,4 +1,4 @@
-# Vercel preset emits trailing-slash override paths (`{ path: "foo/" }`), so prerendered HTML is served by the function instead of statically
+# Vercel preset emits trailing-slash override paths
 
 ## Environment
 
