@@ -1,7 +1,5 @@
 # Vercel preset emits trailing-slash override paths (`{ path: "foo/" }`), so prerendered HTML is served by the function instead of statically
 
-> Uses the Nitro 🐞 Bug report template. Searched existing issues, the closest is open #4242 (root `/` variant). This trailing-slash sub-route case is undocumented.
-
 ## Environment
 
 - Nitro `2.13.4` (via Nuxt `4.4.8`), Node `24.18.0`, preset `vercel`
@@ -71,7 +69,12 @@ Note: rewriting to `{ path: "slash" }` *alone* would leave the canonical `/slash
 
 ## Additional context
 
-Real-world trigger: a Nuxt site using `@nuxtjs/i18n` + `nuxt-site-config` with `trailingSlash: true` produces `{ "de/index.html": { "path": "de/" } }` and serves `/de/` from the function. Related: #4242 (open, root `/` variant), #1651 / PR #500 (original "serve prerendered routes statically" fix).
+Real-world trigger: a Nuxt site using `@nuxtjs/i18n` + `nuxt-site-config` with `trailingSlash: true` produces `{ "de/index.html": { "path": "de/" } }` and serves `/de/` from the function.
+
+Related:
+
+- #4242 (open, root `/` variant)
+- #1651 / PR #500 (original "serve prerendered routes statically" fix)
 
 ## Logs
 
