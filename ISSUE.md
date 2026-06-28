@@ -12,7 +12,8 @@
 
 ## Reproduction
 
-Repo: `<PUSH-URL>` (StackBlitz: `https://stackblitz.com/github/<owner>/repro-nuxt-vercel-trailing-slash-override` — note: WebContainers can't exercise the Vercel build/runtime, so use `vercel build` + deploy).
+Repo: https://github.com/JonathanXDR/repro-nuxt-vercel-trailing-slash-override
+(StackBlitz: https://stackblitz.com/github/JonathanXDR/repro-nuxt-vercel-trailing-slash-override — note: WebContainers can't exercise the Vercel build/runtime, so use `vercel build` + deploy to observe the bug.)
 
 Live demo (deployed with `vercel deploy --prebuilt`, protection off):
 - https://repro-nuxt-vercel-trailing-slash-override-4ufpl8wq9.vercel.app/slash/ — falls through to the function
